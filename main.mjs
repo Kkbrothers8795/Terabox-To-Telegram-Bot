@@ -16,7 +16,7 @@ app.get("/dl", (req, res) => {
 
 const publicURL = "https://terabox-to-telegram-bot.onrender.com/dl?name=";
 
-const BotToken = "6660892564:AAHk03a2AnZpszg-wRBYJ8iSeJd7mtz61-c";
+const BotToken = "6850653040:AAHGNmjrsJDlB_woIPR-aUZ98lD7GdUi8AU";
 const ChatID = "1196575861";
 const bot = new Telegraf(BotToken);
 
