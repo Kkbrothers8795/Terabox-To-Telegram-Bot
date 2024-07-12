@@ -14,7 +14,7 @@ app.get("/dl", (req, res) => {
     res.download("./Files/"+path);
 });
 
-const publicURL = "https://terabox-to-telegram-bot.onrender.com/dl?name=";
+const publicURL = "https://alist-terabox.jpcjb3.easypanel.host/dl?name=";
 
 const BotToken = "6850653040:AAHGNmjrsJDlB_woIPR-aUZ98lD7GdUi8AU";
 const ChatID = "754495556";
