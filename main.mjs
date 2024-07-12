@@ -33,10 +33,10 @@ const DownloadFile = async (filelink,msg) => {
         //console.log(filedata);
         if(filedata.downloadStatus === 'COMPLETE'){
             const filesize_inmb = fs.statSync(filedata.filePath).size / 1000000;
-            if(filesize_inmb > 119){
+            if(filesize_inmb > 49){
                 const name = filedata.filePath.split("/")[2];
                 const link = publicURL + name;
-                msg.reply("File size is more than 120MB. So, here is the download link: " + link);
+                msg.reply("File size is more than 50MB. So, here is the download link: " + link);
             }else{
                 const file = fs.readFileSync(filedata.filePath);
                 const filename = filedata.filePath.split("/")[2];
